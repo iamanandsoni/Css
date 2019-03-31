@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Css Combinators</title>
+	
+	<style>
+	div p {
+	  background-color: red;
+	}
+
+	div > h6 {
+	  background-color: green;
+	}
+
+	div + h5 {
+	  background-color: yellow;
+	}
+
+	div ~ h4 {
+	  background-color: blue;
+	}
+	</style>
+</head>
+
+<body>
+
+<div>
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <span><p>Paragraph 3 in the div.</p></span>
+</div>
+
+<p>Paragraph 4. Not in a div.</p>
+<p>Paragraph 5. Not in a div.</p>
+
+
+<div>
+  <h6>Paragraph 1 in the div.</h6>
+  <h6>Paragraph 2 in the div.</h6>
+  <span><h6>Paragraph 3 in the div.</h6></span> <!-- not Child but Descendant -->
+</div>
+
+<h6>Paragraph 4. Not in a div.</h6>
+<h6>Paragraph 5. Not in a div.</h6>
+
+<div>
+  <h5>Paragraph 1 in the div.</h5>
+  <h5>Paragraph 2 in the div.</h5>
+</div>
+
+<h5>Paragraph 3. Not in a div.</h5>
+<h5>Paragraph 4. Not in a div.</h5>
+
+<h4>Paragraph 1.</h4>
+
+<div>
+  <code>Some code.</code>
+  <h4>Paragraph 2.</h4>
+</div>
+
+<h4>Paragraph 3.</h4>
+<code>Some code.</code>
+<h4>Paragraph 4.</h4>
+
+</body>
+</html>	
